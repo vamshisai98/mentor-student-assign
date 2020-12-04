@@ -262,4 +262,4 @@ app.put("/alterStudent", async (req, res) => {
 })
 
 
-app.listen(port, () => console.log("your app runs with port: 3000"));
+app.listen(port, () => console.log("your app runs with port:"+port));
