@@ -2,6 +2,7 @@ const express = require('express')
 const mongodb = require('mongodb')
 const dotenv = require('dotenv')
 const cors = require('cors')
+const port = process.env.PORT || 3000
 
 const mongoClient = mongodb.MongoClient
 const objectId = mongodb.ObjectID
@@ -261,4 +262,4 @@ app.put("/alterStudent", async (req, res) => {
 })
 
 
-app.listen(3000, () => console.log("your app runs with port: 3000"));
+app.listen(port, () => console.log("your app runs with port: 3000"));
